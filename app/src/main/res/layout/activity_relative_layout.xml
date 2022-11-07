@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/redbox"
+        android:layout_width="150dp"
+        android:layout_height="345dp"
+        android:background="@color/red" />
+
+    <TextView
+        android:id="@+id/bluebox"
+        android:layout_width="150dp"
+        android:layout_height="345dp"
+        android:layout_above="@+id/seekBar"
+        android:layout_below="@+id/redbox"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/blue" />
+
+    <TextView
+        android:id="@+id/yellowbox"
+        android:layout_width="230dp"
+        android:layout_height="225dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/redbox"
+        android:background="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/orangebox"
+        android:layout_width="230dp"
+        android:layout_height="225dp"
+        android:layout_below="@+id/yellowbox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_toEndOf="@+id/redbox"
+        android:background="@color/orange"/>
+
+    <TextView
+        android:id="@+id/purplebox"
+        android:layout_width="230dp"
+        android:layout_height="225dp"
+        android:layout_above="@+id/seekBar"
+        android:layout_below="@+id/orangebox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/redbox"
+        android:background="@color/lavender" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:progressTint="#ee6b6e"
+        android:thumbTint="#ff0800"/>
+</RelativeLayout>
